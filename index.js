@@ -1,3 +1,3 @@
 import { join } from "path"
 
-join("foo", "bar")
+console.log(join("foo", "bar"))

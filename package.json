@@ -4,8 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "with": "babel --presets @babel/preset-es2015 --plugins babel-plugin-rewire index.js",
-    "without": "babel --presets @babel/preset-es2015 index.js"
+    "with": "babel --presets ./babel-preset-rewire.js,@babel/preset-es2015 index.js",
+    "without": "babel --presets @babel/preset-es2015 index.js",
+    "run:with": "yarn --silent with | node",
+    "run:without": "yarn --silent without | node"
   },
   "resolutions": {
     "babel-core": "^7.0.0-bridge.0"
@@ -16,8 +18,7 @@
     "@babel/node": "^7.0.0-beta.40",
     "@babel/preset-es2015": "^7.0.0-beta.40",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-template": "^6.26.0",
-    "babel-types": "^6.26.0"
+    "babel-template": "^6.26.0"
   },
   "dependencies": {
     "babel-plugin-rewire": "^1.1.0"
