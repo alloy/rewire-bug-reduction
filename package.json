@@ -1,0 +1,20 @@
+{
+  "name": "rewire-bug-reduction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-template": "^6.26.0",
+    "babel-types": "^6.26.0"
+  },
+  "dependencies": {
+    "babel-plugin-rewire": "^1.1.0"
+  }
+}
